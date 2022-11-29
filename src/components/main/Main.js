@@ -9,7 +9,7 @@ const Main = (props) => {
     return (
         <main>
             <Navbar/>
-            <ItemListContainer mititulo={"Distribuidora Marvar Snacks"}/>
+            <ItemListContainer greeting={"Distribuidora Marvar Snacks"}/>
             {children}
         </main>
     )

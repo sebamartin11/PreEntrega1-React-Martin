@@ -1,9 +1,9 @@
 import React from 'react'
 import './mititulo.css'
-const ItemListContainer = ({mititulo}) => {
+const ItemListContainer = ({greeting}) => {
     return (
         <div>
-            <h1 className="title-1">{mititulo}</h1>
+            <h1 className="title-1">{greeting}</h1>
         </div>
     )
 }
