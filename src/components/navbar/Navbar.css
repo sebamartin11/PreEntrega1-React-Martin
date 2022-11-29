@@ -1,0 +1,40 @@
+
+.fondo-navbar{
+    background-color: #005899 !important;
+    color:  #1df8b2 !important;
+    padding: 25px;
+}
+
+.title-navbar{
+    background-color: #005899 !important;
+    color:  #1df8b2 !important;
+}
+.nav-item{
+    padding: 20px 0;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+
+.nav-link{
+    color:  #1df8b2 !important;
+    font-size: 18px;
+}
+
+.barra-form{
+    padding-right: 40px;
+}
+
+.btn-success{
+    background-color: #1df8b2;
+    color: #005899;
+}
+.btn-success:hover{
+    background-color: #09e3b0ac;
+    transition: 0.8s;
+}
+
+
+.navbar-toggler{
+    background-color: #1df8b2 !important;
+    color: #005899 !important;
+}
