@@ -5,7 +5,6 @@ import './App.css';
 // Componets
 import Navbar from './components/Navbar/Navbar';
 import "./components/Navbar/Navbar.css";
-import Card from './components/Cards/Card'
 import "./components/Cards/Card.css";
 import Banner from './components/Banner/Banner';
 import "./components/Banner/Banner.css"
@@ -27,9 +26,8 @@ function App() {
           <Routes>  
                 
                   <Route path='/' element = {<ItemListContainer/>} />
-                  <Route path='/' element = {<Card/>} />
                   <Route path='/category/:id' element= {<ItemListContainer/>} />
-                  <Route path='/item/detail/:id/:titulo' element= {<ItemDetailContainer />} />
+                  <Route path='/item/detail/:id' element= {<ItemDetailContainer />} />
                   <Route path='/Productos' element= {<Productos/>} />
                   <Route path='/Nosotros' element= {<Nosotros/>} />
                   <Route path='/Servicios' element= {<Servicios/>} />

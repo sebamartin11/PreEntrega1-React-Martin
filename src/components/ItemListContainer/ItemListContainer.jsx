@@ -8,7 +8,9 @@ import image3 from '../img/sinsal.png'
 import image4 from '../img/jamonserrano.png'
 import image5 from '../img/cheddar.png'
 import image6 from '../img/ketchup.png'
-import ItemDetail from "../ItemDetail/ItemDetail";
+
+
+
 
 // array de productos
 const misCards = [
@@ -62,9 +64,8 @@ const misCards = [
 }
 ];
 
-
 export const ItemListContainer = () => {
-
+    
 const [data, setData] = useState ([]);
 
 useEffect(() => {
@@ -81,7 +82,7 @@ useEffect(() => {
 return (
     <div>
         <Titulo greeting = {"Nuestros Productos"}/>
-        <ItemList data={data} />
+        <ItemList  data={misCards} />
     </div>
 );
 };

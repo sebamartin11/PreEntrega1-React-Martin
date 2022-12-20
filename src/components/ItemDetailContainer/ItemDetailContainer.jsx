@@ -1,68 +1,14 @@
 import React, {useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
 import ItemDetail from '../ItemDetail/ItemDetail'
 import "./ItemDetailContainer.css"
-// img
-import image1 from '../img/papastradicionales.png'
-import image2 from '../img/corteamericano.png'
-import image3 from '../img/sinsal.png'
-import image4 from '../img/jamonserrano.png'
-import image5 from '../img/cheddar.png'
-import image6 from '../img/ketchup.png'
 
-// array de productos
-const misCards = [
-    {
-        id: 1,
-        titulo: "Tradicional x 60",
-        precio: "$128.00",
-        img: image1,
-        btnText: "Comprar",
-        btnDetail: "Ver Producto",
-    },
-    {
-        id: 2,
-        titulo: "Americano x 60",
-        precio: "$128.00",
-        img: image2,
-        btnText: "Comprar",
-        btnDetail: "Ver Producto",
-    },
-    {
-        id: 3,
-        titulo: "Sin sal x 60",
-        precio: "$128.00",
-        img: image3,
-        btnText: "Comprar",
-        btnDetail: "Ver Producto",
-    },
-    {
-        id : 4,
-        titulo: "Jamón x 55",
-        precio: "$140.00",
-        img: image4,
-        btnText: "Comprar",
-        btnDetail: "Ver Producto",
-    },
-    {
-        id: 5,
-        titulo: "Cheddar x 55",
-        precio: "$140.00",
-        img: image5,
-        btnText: "Comprar",
-        btnDetail: "Ver Producto",
-    },
-    {
-        id: 6,
-        titulo: "Ketchup x 55",
-        precio: "$140.00",
-        img: image6,
-        btnText: "Comprar",
-        btnDetail: "Ver Producto"
-    }
-];
 
 export const ItemDetailContainer = () => {
-    const [data, setData] = useState ([]);
+
+    const {id} = useParams()
+
+    const [misCards, setData] = useState ({});
     
     useEffect(() => {
         const getData = new Promise(resolve =>{
@@ -75,7 +21,10 @@ export const ItemDetailContainer = () => {
     }, [])
 
     return (
-        <ItemDetail data = {data}/>
+        <div>
+            <ItemDetail data = {misCards}
+            />
+        </div>
     );
 }
 
