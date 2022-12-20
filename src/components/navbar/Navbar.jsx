@@ -3,6 +3,7 @@
 import React from 'react'
 import Logo from "../Logotipo/Logotipo"
 import Cartwidget from '../Cartwidget/Cartwidget'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -15,16 +16,16 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Productos</a>
+                            <NavLink className="nav-link active" to="/productos">Productos</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Nosotros</a>
+                            <NavLink className="nav-link active" to="/nosotros">Nosotros</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Servicios</a>
+                            <NavLink className="nav-link active" to="/servicios">Servicios</NavLink>
                         </li>
                     </ul>
                     <form className="d-flex barra-form" role="search">

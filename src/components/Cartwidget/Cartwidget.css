@@ -1,7 +1,17 @@
+.containerCart{
+    padding: 10px 30px;
+}
+
+
 .carrito{
     cursor: pointer;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px 5px;
     color: #005899 ;
     background-color:  #1df8b2 ;
+}
+.counter{
+    padding: 0px 5px;
+    color: #005899;
+    font-weight: 600;
 }

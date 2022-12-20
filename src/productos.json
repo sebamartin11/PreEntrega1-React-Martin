@@ -1,0 +1,54 @@
+{
+    "misCards" : [
+    {
+        "id": 1,
+        "titulo": "Tradicional x 60",
+        "precio": "$128.00",
+        "img": "image1",
+        "btnText": "Comprar",
+        "btnDetail": "Ver Producto"
+    },
+    {
+        "id": 2,
+        "titulo": "Americano x 60",
+        "precio": "$128.00",
+        "img": "image2",
+        "btnText": "Comprar",
+        "btnDetail": "Ver Producto"
+    },
+    {
+        "id": 3,
+        "titulo": "Sin sal x 60",
+        "precio": "$128.00",
+        "img": "image3",
+        "btnText": "Comprar",
+        "btnDetail": "Ver Producto"
+    },
+    {
+        "id": 4,
+        "titulo": "Jamón x 55",
+        "precio": "$140.00",
+        "img": "image4",
+        "btnText": "Comprar",
+        "btnDetail": "Ver Producto"
+    },
+    {
+        "id": 5,
+        "titulo": "Cheddar x 55",
+        "precio": "$140.00",
+        "img": "image5",
+        "btnText": "Comprar",
+        "btnDetail": "Ver Producto"
+    },
+    {
+        "id": "6",
+        "titulo": "Ketchup x 55",
+        "precio": "$140.00",
+        "img": "image6",
+        "btnText": "Comprar",
+        "btnDetail": "Ver Producto"
+    }
+    ]
+    
+}
+    

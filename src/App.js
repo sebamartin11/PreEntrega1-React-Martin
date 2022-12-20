@@ -1,72 +1,44 @@
-import Logotipo from './components/Logotipo/Logotipo';
+// import Logotipo from './components/Logotipo/Logotipo';
+import { BrowserRouter as Router, Routes, Route, NavLink, Form } from 'react-router-dom'
 import './App.css';
-import "./components/navbar/Navbar.css";
-import Card from './components/cards/Card'
-import "./components/cards/Card.css";
-import Main from './components/main/Main';
-// array de productos
-const misCards = [
-{
-  id : 1,
-  titulo : "Tradicional x 60",
-  descripcion : "$128.00",
-  img : "https://www.alpuntodeventa.com.ar/wp-content/uploads/0121-1.jpg",
-  btnText : "Comprar"
-},
-{
-  id : 2,
-  titulo : "Americano x 60",
-  descripcion : "$128.00",
-  img : "https://i0.wp.com/www.alpuntodeventa.com.ar/wp-content/uploads/0152-1.jpg?resize=300%2C300&ssl=1",
-  btnText : "Comprar"
-},
-{
-  id : 3,
-  titulo : "Sin sal x 60",
-  descripcion : "$128.00",
-  img : "https://i0.wp.com/www.alpuntodeventa.com.ar/wp-content/uploads/0139.jpg?resize=300%2C300&ssl=1",
-  btnText : "Comprar"
-},
-{
-  titulo : "Jamón x 55",
-  descripcion : "$140.00",
-  img : "https://i0.wp.com/www.alpuntodeventa.com.ar/wp-content/uploads/0134.jpg?resize=300%2C300&ssl=1",
-  btnText : "Comprar",
-},
-{
-  id : 4,
-  titulo : "Cheddar x 55",
-  descripcion : "$140.00",
-  img : "https://i0.wp.com/www.alpuntodeventa.com.ar/wp-content/uploads/0133.jpg?resize=300%2C300&ssl=1",
-  btnText : "Comprar"
-},
-{
-  id : 5,
-  titulo : "Ketchup x 55",
-  descripcion : "$140.00",
-  img : "https://i0.wp.com/www.alpuntodeventa.com.ar/wp-content/uploads/2770.gif?resize=300%2C300&ssl=1",
-  btnText : "Comprar"
-}
-]
+
+// Componets
+import Navbar from './components/Navbar/Navbar';
+import "./components/Navbar/Navbar.css";
+import Card from './components/Cards/Card'
+import "./components/Cards/Card.css";
+import Banner from './components/Banner/Banner';
+import "./components/Banner/Banner.css"
+import Productos from './components/Productos/Productos';
+import Nosotros from './components/Nosotros/Nosotros';
+import Servicios from './components/Servicios/Servicios';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Error404 from './components/404/Error404';
+
 
 function App() {
   return (
-    <div className= "body-css">
-      <Main>
-        <div className="d-flex">
-          {misCards.map(({titulo, descripcion, img, btnText}, id) => (
-            <Card
-              key = {id}
-              titulo = {titulo}
-              descripcion = {descripcion}
-              img = {img}
-              btnText = {btnText}
-            />)
-          )}
-        </div>
+    <Router>
+        <Navbar/>
+        <Banner/>
+        <div className= "body-css">
         
-      </Main>
-    </div>
+          <Routes>  
+                
+                  <Route path='/' element = {<ItemListContainer/>} />
+                  <Route path='/' element = {<Card/>} />
+                  <Route path='/category/:id' element= {<ItemListContainer/>} />
+                  <Route path='/item/detail/:id/:titulo' element= {<ItemDetailContainer />} />
+                  <Route path='/Productos' element= {<Productos/>} />
+                  <Route path='/Nosotros' element= {<Nosotros/>} />
+                  <Route path='/Servicios' element= {<Servicios/>} />
+                  <Route path='*' element = {<Error404/>} />
+          </Routes>
+        </div>
+
+      
+    </Router>
   );
 }
 

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 
 .fondo-navbar{
     background-color: #005899 !important;
@@ -18,15 +21,18 @@
 .nav-link{
     color:  #1df8b2 !important;
     font-size: 18px;
+    font-family: 'Amaranth', sans-serif;
 }
 
 .barra-form{
     padding-right: 40px;
+    font-family: 'Amaranth', sans-serif;
 }
 
 .btn-success{
     background-color: #1df8b2;
     color: #005899;
+    font-family: 'Amaranth', sans-serif;
 }
 .btn-success:hover{
     background-color: #09e3b0ac;
