@@ -1,13 +1,20 @@
 import React from 'react'
-import Card from '../Cards/Card'
+import {Item} from '../Item/Item'
 
 
-const ItemList = ({data = []}) => {
+
+const ItemList = ({data}) => {
 
 
     return (
-        data.map(misCards => <Card key = {misCards.id} data = {misCards}/>)
-    );
-}
+        <div>
+        {
+            data.map(misProvs => (
+                <Item key={misProvs.id} data={misProvs}/>
+            ))
+        }
+        </div>
+    )
+};
 
 export default ItemList

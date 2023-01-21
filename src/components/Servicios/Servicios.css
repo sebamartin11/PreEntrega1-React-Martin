@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.tituloServicios{
+    color: #1df8b2;
+    background-color: #005899;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    padding: 30px;
+}
+
+.alser {
+    padding: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    -webkit-animation: rebotar;
+    animation: rebotar;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+@keyframes rebotar {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        transform: translateY(150px);
+        box-shadow: 0px 10px 10px 10px #000;
+    }
+}
+.imgServicios{
+    padding: 5px 5px;
+    margin: 20px 20px;
+    width: 100vh;
+    height: 100vh;
+}
+
+.arser{
+    color: #005899;
+    font-weight: 600;
+}
+.tituloServicios2{
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
+}
+.parrafoServicios{
+    text-align: left;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 25px;
+}

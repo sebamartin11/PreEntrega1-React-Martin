@@ -1,54 +1,50 @@
-{
-    "misCards" : [
+[
     {
         "id": 1,
         "titulo": "Tradicional x 60",
-        "precio": "$128.00",
-        "img": "image1",
+        "precio": 137.00,
+        "img": "https://carrefourar.vtexassets.com/arquivos/ids/193634/7794520868266_02.jpg?v=637515953947630000",
         "btnText": "Comprar",
         "btnDetail": "Ver Producto"
     },
     {
         "id": 2,
         "titulo": "Americano x 60",
-        "precio": "$128.00",
-        "img": "image2",
+        "precio":137.00,
+        "img": "https://carrefourar.vtexassets.com/arquivos/ids/197136/7794520868341_02.jpg?v=637523691618300000",
         "btnText": "Comprar",
         "btnDetail": "Ver Producto"
     },
     {
         "id": 3,
         "titulo": "Sin sal x 60",
-        "precio": "$128.00",
-        "img": "image3",
+        "precio": 137.00,
+        "img": "https://www.mialmacenamigo.com.ar/wp-content/uploads/0139.jpg",
         "btnText": "Comprar",
         "btnDetail": "Ver Producto"
     },
     {
         "id": 4,
         "titulo": "Jamón x 55",
-        "precio": "$140.00",
-        "img": "image4",
+        "precio": 150.00,
+        "img": "https://www.pasosonline.com.ar/wp-content/uploads/2018/08/KRACHITOS-papas-fritas-con-jamon-x55g.png",
         "btnText": "Comprar",
         "btnDetail": "Ver Producto"
     },
     {
         "id": 5,
         "titulo": "Cheddar x 55",
-        "precio": "$140.00",
-        "img": "image5",
+        "precio": 150.00,
+        "img": "https://www.mialmacenamigo.com.ar/wp-content/uploads/2180..jpg",
         "btnText": "Comprar",
         "btnDetail": "Ver Producto"
     },
     {
-        "id": "6",
+        "id": 6,
         "titulo": "Ketchup x 55",
-        "precio": "$140.00",
-        "img": "image6",
+        "precio": 150.00,
+        "img": "https://telollevo.xyz/wp-content/uploads/2020/07/img453.jpg",
         "btnText": "Comprar",
         "btnDetail": "Ver Producto"
     }
-    ]
-    
-}
-    
+]

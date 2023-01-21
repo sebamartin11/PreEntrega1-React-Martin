@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.tituloNosotros{
+    color: #1df8b2;
+    background-color: #005899;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    padding: 30px;
+}
+
+
+.container-fluid {
+    overflow: hidden;
+}
+.row {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+}
+
+.al {
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: rebotar;
+    animation: rebotar;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes rebotar {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        transform: translateY(150px);
+        box-shadow: 0px 10px 10px 10px #000;
+    }
+}
+
+@keyframes rebotar {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        transform: translateY(150px);
+        box-shadow: 0px 10px 10px 10px #000;
+    }
+}
+
+.imgCamion{
+    width: 104vh;
+    height: 100vh;
+    padding: 15px 15px;
+    /* margin: 20px 5px; */
+}
+
+.ar {
+    color: #005899;
+}
+
+.ar h3 {
+    text-align: center;
+    color: #005899;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Amaranth", sans-serif;
+}
+
+.ar p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Amaranth", sans-serif;
+}
+
+.ar p::-moz-selection {
+    color: #005899;
+    background-color: #000;
+}
+
+.ar p::selection {
+    color: #005899;
+    background-color: #000;
+}

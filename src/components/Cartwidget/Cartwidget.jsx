@@ -1,13 +1,21 @@
-import React from 'react'
-import './Cartwidget.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { CartProvider } from "../../Context/CartContext";
+import "./CartWidget.css"
 
-const Cartwidget = () => {
+const CartWidget = ({ classname }) => {
+    const { cart } = (CartProvider());
+
     return (
-        <div className= "containerCart">
-            <span className= "carrito">🛒<span className= "counter">0</span></span>
-            
-        </div>
-    )
-}
+        <>
+            <Link to={"/cart"} className={classname}>
+                <div className="d-flex align-items-center">
+                    <i className="fas fa-shopping-cart btn btn-sm text-light"></i>
+                    <span className="carrito text-blue fs-5">🛒{cart.length}</span>
+                </div>
+            </Link>
+        </>
+    );
+};
 
-export default Cartwidget
+export default CartWidget;

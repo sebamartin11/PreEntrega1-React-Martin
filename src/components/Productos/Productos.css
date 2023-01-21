@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.tituloProductos{
+    color: #1df8b2;
+    background-color: #005899;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    padding: 30px;
+}
+
+.sectionProducts{
+    display: inline-block;
+    margin: 30px;
+    background-color: #1df8b2;
+    padding-left: 10vh;
+}
+
+.cardProducts{
+    width: 15rem;
+
+}
+
+.card-body2{
+    margin-top: 10px;
+    background-color: #1df8b2; 
+    color: #005899 !important;
+    text-align: center;
+    font-weight: 500;
+}
+
+.link{
+    text-decoration: none !important; 
+}
+
+.btn{
+    color: #1df8b2;
+    background-color: #005899;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin: 15px ;
+}
+.btn-primary:hover{
+    background-color: rgba(0, 0, 255, 0.553);
+    transition: 0.8s;
+}
+
+.productos{
+    height: 30vh;
+    width: 30vh !important;
+}

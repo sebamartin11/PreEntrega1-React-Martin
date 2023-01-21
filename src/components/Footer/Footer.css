@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+footer {
+    background-color: #1df8b2;
+    background-image: linear-gradient(155deg, #1df8b2 0%, #0066ff 50%, #0066ff 100%);
+    width: 100%;
+    text-align: center;
+    color: #1effb8;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    padding: 25px;
+}
+
+.logoMarvar:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+.grupo-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 45px 0px;
+}
+
+.grupo-1 .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-1 .box h3 {
+    letter-spacing: 2px;
+}
+
+.grupo-1 .box p {
+    margin-bottom: 5px;
+    padding-top: 0px;
+}
+
+.grupo-1 .redes {
+    font-size: 35px;
+    padding-left: 25px;
+    padding-right: 17px;
+    display: inline-block ;
+    /* letter-spacing: 20px; */
+}
+
+.grupo-1 .redes{
+    color: #1df8b2;
+
+}
+
+.grupo-1 .redes a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.grupo-1 .grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+}

@@ -1,9 +1,9 @@
 import React from 'react'
-import "./mititulo.css"
+import "./miTitulo.css"
 
 const Titulo = ({greeting}) => {
     return (
-        <h1 className="title-1">{greeting}</h1>
+        <h2 className="title-2">{greeting}</h2>
     )
 }
 

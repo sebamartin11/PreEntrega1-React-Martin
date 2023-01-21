@@ -9,9 +9,11 @@
     padding: 10px 5px;
     color: #005899 ;
     background-color:  #1df8b2 ;
+    text-decoration: none !important;
 }
 .counter{
     padding: 0px 5px;
     color: #005899;
     font-weight: 600;
+    text-decoration: none !important;
 }

@@ -1,12 +1,8 @@
 .sectionCards{
-    display: inline-flex;
-    margin: 30px;
+    display: inline-block;
+    margin: 20px 100px;
     background-color: #1df8b2;
-}
-
-.card{
-    width: 15rem;
-
+    padding-left: 10vh;
 }
 
 .card-body{
@@ -20,13 +16,13 @@
     text-decoration: none !important; 
 }
 
-.btn-primary{
+.btn{
     color: #1df8b2;
     background-color: #005899;
     font-weight: 500;
     display: flex;
     flex-direction: column;
-    margin: 15px ;
+    /* margin: 15px ; */
 }
 .btn-primary:hover{
     background-color: rgba(0, 0, 255, 0.553);
@@ -34,7 +30,25 @@
 }
 
 .productos{
-    padding: 5vh;
-    height: 40vh;
-    width: 100%;
+    height: 30vh;
+    width: 30vh;
+}
+
+@media screen and (max-width:1200px){    
+
+}
+@media screen and (max-width:1024px){    
+
+}
+@media screen and (max-width: 768px){
+    .sectionCards{
+        padding-left: 10vh;
+
+    }
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 320px){
+
 }

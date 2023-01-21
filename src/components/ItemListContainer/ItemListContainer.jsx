@@ -1,90 +1,89 @@
-import React, {useState, useEffect} from "react";
+import React from 'react'
+import { useState, useEffect } from 'react'
+import Titulo from '../Titulo/Titulo'
 import ItemList from '../ItemList/ItemList'
-import Titulo from "../Titulo/Titulo";
+
 // img
-import image1 from '../img/papastradicionales.png'
-import image2 from '../img/corteamericano.png'
-import image3 from '../img/sinsal.png'
-import image4 from '../img/jamonserrano.png'
-import image5 from '../img/cheddar.png'
-import image6 from '../img/ketchup.png'
+import image100 from '../../Assets/Img/slices.krach.jpeg'
+import image101 from '../../Assets/Img/slices.hisp.png'
+import image102 from '../../Assets/Img/slices.macritas.jpeg'
+import image103 from '../../Assets/Img/logoarrocitas.jpeg'
+import image104 from '../../Assets/Img/logocrisjor.jpeg'
+import image105 from '../../Assets/Img/logoinysa.jpg'
 
-
-
-
-// array de productos
-const misCards = [
+// array de prooveedores
+const misProvs = [
 {
-    id: 1,
-    titulo: "Tradicional x 60",
-    precio: "$128.00",
-    img: image1,
-    btnText: "Comprar",
-    btnDetail: "Ver Producto",
+    id: 100,
+    titulo: "Krachitos",
+    // precio: "$137.00",
+    img: image100,
+    // btnText: "Comprar",
+    btnDetail: "Ver Productos",
 },
 {
-    id: 2,
-    titulo: "Americano x 60",
-    precio: "$128.00",
-    img: image2,
-    btnText: "Comprar",
-    btnDetail: "Ver Producto",
+    id: 101,
+    titulo: "5 Hispanos",
+    // precio: "$137.00",
+    img: image101,
+    // btnText: "Comprar",
+    btnDetail: "Ver Productos",
 },
 {
-    id: 3,
-    titulo: "Sin sal x 60",
-    precio: "$128.00",
-    img: image3,
-    btnText: "Comprar",
-    btnDetail: "Ver Producto",
+    id: 102,
+    titulo: "Macritas",
+    // precio: "$137.00",
+    img: image102,
+    // btnText: "Comprar",
+    btnDetail: "Ver Productos",
 },
 {
-    id: 4,
-    titulo: "Jamón x 55",
-    precio: "$140.00",
-    img: image4,
-    btnText: "Comprar",
-    btnDetail: "Ver Producto",
+    id: 103,
+    titulo: "Arrocitas",
+    // precio: "$150.00",
+    img: image103,
+    // btnText: "Comprar",
+    btnDetail: "Ver Productos",
 },
 {
-    id: 5,
-    titulo: "Cheddar x 55",
-    precio: "$140.00",
-    img: image5,
-    btnText: "Comprar",
-    btnDetail: "Ver Producto",
+    id: 104,
+    titulo: "Crisjor",
+    // precio: "$150.00",
+    img: image104,
+    // btnText: "Comprar",
+    btnDetail: "Ver Productos",
 },
 {
-    id: 6,
-    titulo: "Ketchup x 55",
-    precio: "$140.00",
-    img: image6,
-    btnText: "Comprar",
-    btnDetail: "Ver Producto",
+    id: 105,
+    titulo: "Inysa",
+    // precio: "$150.00",
+    img: image105,
+    // btnText: "Comprar",
+    btnDetail: "Ver Productos",
 }
 ];
 
-export const ItemListContainer = () => {
+const ItemListContainer = () => {
+
+
+    const [data, setData] = useState ({});
+
+    useEffect(() => {
+        const getData = new Promise(resolve =>{
+            setTimeout(() => {
+                resolve(misProvs);
+            }, 2000);
+        });
+        
+        getData.then(respuesta => setData(respuesta));
+    }, [])
     
-const [data, setData] = useState ([]);
+    return (
+        <div>
+            <Titulo greeting = {"Nuestros Proveedores"}/>
+            <ItemList value={data} data ={misProvs} />
+        </div>
+    )
+}
 
-useEffect(() => {
-    const getData = new Promise(resolve =>{
-        setTimeout(() => {
-            resolve(misCards);
-        }, 2000);
-    });
-    
-    getData.then(respuesta => setData(respuesta));
-}, [])
-
-
-return (
-    <div>
-        <Titulo greeting = {"Nuestros Productos"}/>
-        <ItemList  data={misCards} />
-    </div>
-);
-};
-
-export default ItemListContainer;
+export default ItemListContainer
