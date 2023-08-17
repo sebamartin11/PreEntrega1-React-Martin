@@ -18,7 +18,7 @@ const Spinner = () => {
                     style={{zIndex:100}}
                 >
                 <div className="spinner-grow" style={{ width: "3rem", height: "3rem" }}>
-                    <span className="visually-hidden">Loading...</span>
+                    <span className="visually-hidden">Cargando...</span>
                 </div>
             </div>
 
