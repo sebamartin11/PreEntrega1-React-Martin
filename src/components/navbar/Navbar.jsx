@@ -1,7 +1,7 @@
 // rafce atajo
 import React from 'react'
 import Logo from "../Logotipo/Logotipo"
-import Cartwidget from '../CartWidget/CartWidget'
+import Cartwidget from "../CartWidget/CartWidget"
 import "./Navbar.css"
 import { NavLink } from 'react-router-dom'
 import Search from '../Search/Search'
